@@ -1,0 +1,73 @@
+.dropdown {
+  position: relative;
+}
+.dropdownSimple {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #169cd1de;
+  height: fit-content;
+  width: max-content;
+}
+.dropdownName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  text-transform: capitalize;
+  width: 15vw;
+  height: 7vh;
+}
+.dropdownName:hover {
+  border-color: #00000034;
+  border-width: 2px 0;
+  border-style: solid;
+  cursor: pointer;
+}
+.dropdownOptions {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+.dropdownOption {
+  width: 15vw;
+  height: 7vh;
+  text-align: center;
+  line-height: 7vh;
+  text-transform: capitalize;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.493);
+}
+.dropdownOption:nth-child(2n + 1) {
+  background: #8eacb8de;
+}
+.dropdownOption:nth-child(2n + 2) {
+  background: #78a9bdde;
+}
+.dropdownOption:hover {
+  border-color: #00000034;
+  border-width: 2px 0;
+  border-style: solid;
+  cursor: pointer;
+}
+.caretDownIcon {
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+  background: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.caretUpIcon {
+  width: 10px;
+  height: 10px;
+  margin-left: 20px;
+  background: #ffffff;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}

@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Navbar from "./component/navbar/Navbar";
+import { DropdownSimple } from "./component/dropdown/Dropdown";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar logo={"logo"} appName={"appName"} auth={false} />
+      <DropdownSimple
+        dropdownName={"dropdownName"}
+        dropdownOptions={["option1", "option2", "option3"]}
+      ></DropdownSimple>
     </div>
   );
-}
+};
 
 export default App;

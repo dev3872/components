@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+.navbar {
+  background: #26bae7c2;
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  margin-left: 20px;
+  width: 50px;
+  height: fit-content;
+  cursor: pointer;
+}
+.appName {
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.loginRegister {
+  margin-left: auto;
+  margin-right: 20px;
+}
